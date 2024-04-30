@@ -1,12 +1,13 @@
-'use client';
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
-export function someComputation() {
+export function SomeComputation() {
   // expensive logic that generates a component
 
-  return function Test() {
+  const TheComp = function Test() {
     const [state] = useState(4);
-    return <p>test: {state}</p>
-  }
+    return <p>test: {state}</p>;
+  };
+  return <TheComp />;
 }
